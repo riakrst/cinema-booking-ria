@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone repo private menggunakan credential github-pat (username/password)
-                git branch: 'jenkins',
+                git branch: 'jenkis',
                     url: 'https://github.com/riakrst/cinema-booking-ria.git',
                     credentialsId: 'github-pat'
             }
