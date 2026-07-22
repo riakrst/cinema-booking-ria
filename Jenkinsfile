@@ -8,10 +8,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Clone repo private menggunakan credential github-pat (username/password)
-                git branch: 'Jenkis',
-                    url: 'https://github.com/riakrst/cinema-booking-ria.git',
-                    credentialsId: 'github-pat'
+                // Menggunakan konfigurasi SCM bawaan Jenkins agar dinamis dan menghindari masalah case-sensitive branch
+                checkout scm
             }
         }
 
@@ -42,7 +40,7 @@ pipeline {
     post {
         success {
             echo 'Pipeline berhasil! Aplikasi sudah running.'
-            echo 'Frontend : http://localhost:8082'
+            echo 'Frontend : http://localhost:8084'
             echo 'Backend  : http://localhost:5001'
         }
         failure {
