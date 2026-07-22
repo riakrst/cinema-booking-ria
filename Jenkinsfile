@@ -42,8 +42,8 @@ pipeline {
     post {
         success {
             echo 'Pipeline berhasil! Aplikasi sudah running.'
-            echo 'Frontend : http://localhost'
-            echo 'Backend  : http://localhost:5000'
+            echo 'Frontend : http://localhost:8082'
+            echo 'Backend  : http://localhost:5001'
         }
         failure {
             echo 'Pipeline gagal! Cek log di atas untuk detail error.'
