@@ -1,4 +1,4 @@
-# Cinema Booking
+# Cinema Booking Ria
 
 Aplikasi pemesanan tiket bioskop dengan frontend React/Vite dan backend Express/MongoDB.
 
