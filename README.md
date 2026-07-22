@@ -1,4 +1,4 @@
-# Cinema Booking Ria
+# Cinema Booking Ria (Practice Jenkins)
 
 Aplikasi pemesanan tiket bioskop dengan frontend React/Vite dan backend Express/MongoDB.
 
